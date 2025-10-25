@@ -154,12 +154,9 @@ src/
 
 1. <img width="1915" height="908" alt="image" src="https://github.com/user-attachments/assets/753f895a-781c-46d1-b1e8-7e9eff0df617" />
 
-
 2. <img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/641dd287-f141-433b-b6c3-cd9e787b2753" />
 
-
 3. <img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/d9029516-bac3-4c62-a4cb-3fdf01d39be7" />
-
 
 ## 🔧 How It Works
 

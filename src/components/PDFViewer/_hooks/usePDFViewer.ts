@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react"
 import * as pdfjsLib from "pdfjs-dist"
 import type { PDFState } from "../types/PDFViewerTypes"
+import { PDFJSConfig } from "../../../constants/config"
 
 if (typeof window !== "undefined") {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `${PDFJSConfig.BASE_URL}${pdfjsLib.version}${PDFJSConfig.WORKER_PATH}`
 }
 
 export function usePDFViewer(file: File) {
