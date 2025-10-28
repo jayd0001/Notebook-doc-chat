@@ -22,8 +22,8 @@ User's question: ${userInput}
 
 PDF content:
 ${pdfText}`
-
-    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
+    const response = await fetch(`${apiBaseUrl}/v1/chat/completions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
