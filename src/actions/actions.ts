@@ -1,3 +1,5 @@
+import { ApiConfig } from "../constants/config"
+
 export async function chatWithGroq({
   pdfText,
   conversationHistory,
@@ -22,8 +24,8 @@ User's question: ${userInput}
 
 PDF content:
 ${pdfText}`
-    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
-    const response = await fetch(`${apiBaseUrl}/v1/chat/completions`, {
+
+    const response = await fetch(`${ApiConfig?.BASE_URL}${ApiConfig?.ENDPOINT}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,6 +41,9 @@ ${pdfText}`
         max_tokens: 2048,
       }),
     })
+    console.log("🚀 ~ chatWithGroq ~ response:", response)
+    console.log("🚀 ~ chatWithGroq ~ response:", response)
+    console.log("🚀 ~ chatWithGroq ~ response:", response)
 
     if (!response.ok) {
       const errorData = await response.json()
