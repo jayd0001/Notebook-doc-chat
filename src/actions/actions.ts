@@ -41,9 +41,6 @@ ${pdfText}`
         max_tokens: 2048,
       }),
     })
-    console.log("🚀 ~ chatWithGroq ~ response:", response)
-    console.log("🚀 ~ chatWithGroq ~ response:", response)
-    console.log("🚀 ~ chatWithGroq ~ response:", response)
 
     if (!response.ok) {
       const errorData = await response.json()
